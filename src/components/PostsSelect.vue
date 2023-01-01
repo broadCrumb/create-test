@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <v-select
-      v-model="selectedPost"
-      :items="allPosts"
-      @change="change"
-      label="filter by post"
-      item-text="title"
-      :loading="isLoadingPosts"
-      item-value="id"
-    />
-  </div>
+  <v-select
+    v-model="selectedPost"
+    :items="allPosts"
+    @change="change"
+    label="filter by post"
+    item-text="title"
+    :loading="isLoadingPosts"
+    item-value="id"
+  />
 </template>
 
 <script>
